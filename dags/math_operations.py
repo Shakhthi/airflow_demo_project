@@ -4,7 +4,6 @@ from datetime import datetime
 
 def start_task(**context):
     context['ti'].xcom_push(key='cur_value', value=4)
-    #context['num'].xcom_push(key='cur_value', value=4)
     print("value instantiated...")
 
 def add_task(**context):
